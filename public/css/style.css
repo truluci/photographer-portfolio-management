@@ -1,0 +1,66 @@
+/* Variables for Colors and Sizes */
+:root {
+    --primary-bg-color: #121212;
+    --secondary-bg-color: #1e1e1e;
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #aaaaaa;
+
+    --btn-bg-color: #333333;
+    --btn-hover-color: #444444;
+    --btn-text-color: #ffffff;
+
+    --font-size-huge: 2rem;
+    --font-size-normal: 1rem;
+    --font-size-small: 0.875rem;
+
+    --border-radius: 5px;
+    --padding: 10px 20px;
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: var(--secondary-bg-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: var(--font-size-huge);
+    margin-bottom: 20px;
+    color: var(--primary-text-color);
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    font-size: var(--font-size-normal);
+    padding: var(--padding);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--btn-hover-color);
+}
