@@ -12,7 +12,8 @@ function loadEnv($file) {
     }
 }
 
-loadEnv('../.env');
+
+loadEnv(__DIR__ . '/../.env');
 
 $host = 'localhost';
 $dbname = 'portfolio_management';

@@ -11,6 +11,7 @@
         <h1>Photographer Portfolio</h1>
         <div class="options">
             <a href="login.php" class="btn">Login</a>
+            <a href="register.php" class="btn">Register</a>
             <a href="view.php" class="btn">Photos</a>
         </div>
     </div>

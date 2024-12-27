@@ -1,66 +1,88 @@
-/* Variables for Colors and Sizes */
+/* Variables */
 :root {
     --primary-bg-color: #121212;
     --secondary-bg-color: #1e1e1e;
-    --primary-text-color: #ffffff;
+    --text-color: #ffffff;
     --secondary-text-color: #aaaaaa;
-
     --btn-bg-color: #333333;
     --btn-hover-color: #444444;
     --btn-text-color: #ffffff;
-
-    --font-size-huge: 2rem;
     --font-size-normal: 1rem;
-    --font-size-small: 0.875rem;
-
-    --border-radius: 5px;
     --padding: 10px 20px;
+    --border-radius: 5px;
 }
 
-/* General Styles */
+/* Body Styling */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
     background-color: var(--primary-bg-color);
-    color: var(--primary-text-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
 }
 
+/* Container */
 .container {
-    text-align: center;
     background-color: var(--secondary-bg-color);
     padding: 20px;
     border-radius: var(--border-radius);
+    text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
-    font-size: var(--font-size-huge);
     margin-bottom: 20px;
-    color: var(--primary-text-color);
 }
 
-.options {
+.form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--secondary-text-color);
+}
+
+input {
+    padding: var(--padding);
+    border: none;
+    border-radius: var(--border-radius);
+    background-color: var(--primary-bg-color);
+    color: var(--text-color);
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid var(--btn-hover-color);
+}
+
 .btn {
-    display: inline-block;
     background-color: var(--btn-bg-color);
     color: var(--btn-text-color);
-    font-size: var(--font-size-normal);
     padding: var(--padding);
-    text-decoration: none;
+    border: none;
     border-radius: var(--border-radius);
-    text-align: center;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .btn:hover {
     background-color: var(--btn-hover-color);
+}
+
+.text-secondary {
+    margin-top: 15px;
+    font-size: 0.875rem;
+    color: var(--secondary-text-color);
+}
+
+.text-secondary a {
+    color: var(--btn-text-color);
+    text-decoration: underline;
 }
