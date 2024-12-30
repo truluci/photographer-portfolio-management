@@ -14,10 +14,10 @@ if (!empty($_POST)) {
         exit;
     }
 
-    // if ($user_password !== $confirm_password) {
-    //     header("Location: ../../public/register.php?error=Passwords do not match.");
-    //     exit;
-    // }
+    if ($user_password !== $confirm_password) {
+        header("Location: ../../public/register.php?error=Passwords do not match.");
+        exit;
+    }
 
     try {
         // Hash the password
