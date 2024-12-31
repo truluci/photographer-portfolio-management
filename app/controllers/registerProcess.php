@@ -21,7 +21,7 @@ if (!empty($_POST)) {
 
     try {
         // Hash the password
-        $hash = password_hash($password, PASSWORD_BCRYPT);
+        $hash = password_hash($user_password, PASSWORD_BCRYPT);
 
         // Insert data into the database
         // echo $user_username;

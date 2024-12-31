@@ -17,11 +17,11 @@ loadEnv(__DIR__ . '/../.env');
 
 $host = 'localhost';
 $dbname = 'portfolio_management';
-$username = 'root';
-$password = getenv('DB_PASS');
+$dbusername = 'root';
+$dbpassword = getenv('DB_PASS');
 
 try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $dbusername, $dbpassword);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
     die("Database connection failed: " . $e->getMessage());
