@@ -13,7 +13,7 @@
     <div class="photos">
         <?php foreach ($photos as $photo): ?>
             <div>
-            <img src="../../<?php echo htmlspecialchars($photo['image_path']); ?>" alt="<?php echo htmlspecialchars($photo['title']); ?>">
+            <img src="../../../public/<?php echo htmlspecialchars($photo['image_path']); ?>" alt="<?php echo htmlspecialchars($photo['title']); ?>" width="250" height="200">
                 <p>Title: <?php echo htmlspecialchars($photo['title']); ?></p>
                 <p>Description: <?php echo htmlspecialchars($photo['description']); ?></p>
                 <p>Uploaded by: <?php echo htmlspecialchars($photo['username']); ?></p>
