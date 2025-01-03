@@ -30,8 +30,8 @@ if (!empty($_POST)) {
             $_SESSION['username'] = $user['username'];
             $_SESSION['role'] = $user['role'];
             
-            // Redirect to the dashboard
-            header("Location: ../../app/views/guest/guest.php");
+            // Redirect to the user role's dashboard
+            header("Location: ../../app/views/{$user['role']}/{$user['role']}.php");
             exit;
         } else {
             // Redirect to the login page on failure

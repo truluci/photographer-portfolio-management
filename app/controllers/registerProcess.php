@@ -27,7 +27,7 @@ if (!empty($_POST)) {
         // echo $user_username;
         // echo $user_password;
         // echo $confirm_password;
-        $role = 'guest';
+        $role = 'photographer';
         $sql = "INSERT INTO users (username, password, role) VALUES (?, ?, ?)";
         $stmt = $pdo->prepare($sql); // Use `$pdo` for the database connection
         $stmt->execute([$user_username, $hash, $role]);
