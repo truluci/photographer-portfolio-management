@@ -2,10 +2,10 @@
 session_start();
 
 // Check if the user is logged in and has the 'guest' role
-if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'guest') {
-    header("Location: login.php?error=Unauthorized access.");
-    exit;
-}
+// if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'guest') {
+//     header("Location: login.php?error=Unauthorized access.");
+//     exit;
+// }
 
 // get currnent directory
 $dir = __DIR__;
