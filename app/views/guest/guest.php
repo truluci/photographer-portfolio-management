@@ -10,7 +10,13 @@
     <link rel="stylesheet" href="../../../public/css/guest.css">
 </head>
 <body>
-    <h1>Photos</h1>
+    <div class="top-bar">
+        <h1>Photos</h1>
+        <?php if (isset($_SESSION['user_id'])): ?>
+            <a href="../logout.php" class="btn logout-btn">Logout</a>
+        <?php endif; ?>
+    </div>
+
     <div class="photos">
         <?php foreach ($photos as $photo): ?>
             <div>

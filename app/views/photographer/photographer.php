@@ -13,7 +13,10 @@
     <!-- Top bar with title and post button -->
     <div class="top-bar">
         <h1>Photos</h1>
-        <button class="btn post-btn" onclick="toggleUploadForm()">📸 Post a Photo</button>
+        <div class="buttons">
+            <button class="btn post-btn" onclick="toggleUploadForm()">📸 Post a Photo</button>
+            <a href="../logout.php" class="btn logout-btn">Logout</a>
+        </div>
     </div>
 
     <!-- Upload Form (Initially Hidden) -->
