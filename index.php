@@ -10,9 +10,9 @@
     <div class="container">
         <h1>Photographer Portfolio</h1>
         <div class="options">
-            <a href="login.php" class="btn">Login</a>
-            <a href="register.php" class="btn">Register</a>
-            <a href="../app/views/guest/guest.php" class="btn">Photos</a>
+            <a href="./public/login.php" class="btn">Login</a>
+            <a href="./public/register.php" class="btn">Register</a>
+            <a href="./app/views/guest/guest.php" class="btn">Photos</a>
         </div>
     </div>
 </body>
