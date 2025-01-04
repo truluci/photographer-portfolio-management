@@ -34,6 +34,7 @@ require "../../controllers/adminController.php";
                     <select name="new_role">
                         <option value="photographer" <?= $user['role'] == 'photographer' ? 'selected' : ''; ?>>Photographer</option>
                         <option value="guest" <?= $user['role'] == 'guest' ? 'selected' : ''; ?>>Guest</option>
+                        <option value="editor" <?= $user['role'] == 'editor' ? 'selected' : ''; ?>>Editor</option>
                     </select>
                     <button type="submit" name="change_role">Update</button>
                 </form>
