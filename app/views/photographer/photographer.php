@@ -45,6 +45,11 @@
             <button type="submit" class="btn">Upload</button>
         </form>
     </div>
+    
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search photos by title or description..." />
+    </div>
 
     <!-- Display All Approved Photos -->
     <div class="photos">
@@ -78,4 +83,5 @@
         }
     </script>
 </body>
+<script src="../../../public/js/search.js" defer></script>
 </html>

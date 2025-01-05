@@ -10,6 +10,22 @@
     margin-bottom: 20px;
 }
 
+/* Search Bar */
+.search-container {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    font-size: var(--font-size-normal);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    background-color: var(--primary-bg-color);
+    color: var(--text-color);
+}
+
 /* Logout Button */
 .logout-btn {
     background-color: rgb(85, 7, 7);

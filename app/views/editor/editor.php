@@ -21,6 +21,11 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'editor') {
         <a href="../logout.php" class="btn logout-btn">Logout</a>
     </div>
 
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search photos by title or description..." />
+    </div>
+
     <h2>Manage Photos</h2>
     <div class="photos">
         <?php foreach ($photos as $photo): ?>
@@ -47,4 +52,5 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'editor') {
         <?php endforeach; ?>
     </div>
 </body>
+<script src="../../../public/js/search.js" defer></script>
 </html>

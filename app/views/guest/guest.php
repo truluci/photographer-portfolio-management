@@ -17,6 +17,11 @@
         <?php endif; ?>
     </div>
 
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search photos by title or description..." />
+    </div>
+
     <div class="photos">
         <?php foreach ($photos as $photo): ?>
             <div>
@@ -28,4 +33,5 @@
         <?php endforeach; ?>
     </div>
 </body>
+<script src="../../../public/js/search.js" defer></script>
 </html>
