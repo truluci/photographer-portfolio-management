@@ -12,10 +12,14 @@
 <body>
     <div class="top-bar">
         <h1>Photos</h1>
-        <?php if (isset($_SESSION['user_id'])): ?>
-            <a href="../logout.php" class="btn logout-btn">Logout</a>
-        <?php endif; ?>
+        <div class="buttons">
+            <a href="./json.php" class="btn json-btn">📄 View JSON Data</a>
+            <?php if (isset($_SESSION['user_id'])): ?>
+                <a href="../logout.php" class="btn logout-btn">Logout</a>
+            <?php endif; ?>
+        </div>
     </div>
+
 
     <!-- Search Bar -->
     <div class="search-container">
